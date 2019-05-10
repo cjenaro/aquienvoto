@@ -32,7 +32,7 @@ export default {
           id: 1,
           name: 'Mario+Negri',
           partido: 'Cordoba cambia',
-          pic: 'aquienvoto/negri.jpg',
+          pic: '/aquienvoto/negri.jpg',
           twitter: 'https://twitter.com/marioraulnegri',
           news: [],
         },
@@ -40,7 +40,7 @@ export default {
           id: 2,
           name: 'Juan+Schiaretti',
           partido: 'Hacemos por Cordoba',
-          pic: 'aquienvoto/schiaretti.png',
+          pic: '/aquienvoto/schiaretti.png',
           twitter: 'https://twitter.com/JSchiaretti',
           news: [],
         },
@@ -48,7 +48,7 @@ export default {
           id: 3,
           name: 'Fernando+Schülle',
           partido: 'Partido humanista',
-          pic: 'aquienvoto/schulle.jpg',
+          pic: '/aquienvoto/schulle.jpg',
           twitter: 'https://twitter.com/ferschule',
           news: [],
         },
@@ -56,7 +56,7 @@ export default {
           id: 4,
           name: 'Aurelio+Elorrio',
           partido: 'Encuentro Vecinal Cordoba',
-          pic: 'aquienvoto/elorrio.jpg',
+          pic: '/aquienvoto/elorrio.jpg',
           twitter: 'https://twitter.com/AGarciaElorrio',
           news: []
         },
@@ -64,7 +64,7 @@ export default {
           id: 5,
           name: 'Carlos+Bianco',
           partido: 'Union del centro democratico',
-          pic: 'aquienvoto/negri.jpg',
+          pic: '/aquienvoto/negri.jpg',
           twitter: 'https://twitter.com/marioraulnegri',
           news: []
         },
@@ -72,7 +72,7 @@ export default {
           id: 6,
           name: 'Enrique+Sella',
           partido: 'P.A.I.S',
-          pic: 'aquienvoto/sella.jpg',
+          pic: '/aquienvoto/sella.jpg',
           twitter: 'https://twitter.com/SellaEnrique',
           news: []
         },
@@ -80,7 +80,7 @@ export default {
           id: 7,
           name: 'Ramón+Mestre',
           partido: 'Union civica radical',
-          pic: 'aquienvoto/mestre.jpg',
+          pic: '/aquienvoto/mestre.jpg',
           twitter: 'https://twitter.com/ramonjmestre',
           news: []
         },
@@ -88,7 +88,7 @@ export default {
           id: 8,
           name: 'Liliana+Olivero',
           partido: 'Frente de izquierda y de los trabajadores',
-          pic: 'aquienvoto/olivero.jpg',
+          pic: '/aquienvoto/olivero.jpg',
           twitter: 'https://twitter.com/LilianaOlivero',
           news: []
         },
@@ -96,7 +96,7 @@ export default {
           id: 9,
           name: 'Eduardo+Mulhall',
           partido: 'Movimiento avanzada socialista',
-          pic: 'aquienvoto/mulhall.jpg',
+          pic: '/aquienvoto/mulhall.jpg',
           twitter: 'https://twitter.com/EduardoMulhall',
           news: []
         },
@@ -104,7 +104,7 @@ export default {
           id: 10,
           name: 'Kasem+Dandach',
           partido: 'Movimiento de accion vecinal',
-          pic: 'aquienvoto/dandach.png',
+          pic: '/aquienvoto/dandach.png',
           twitter: 'https://twitter.com/KasemDandach57',
           news: []
         },
@@ -112,7 +112,7 @@ export default {
           id: 11,
           name: 'Luis+Beltrán',
           partido: 'Vecinalismo Independiente',
-          pic: 'aquienvoto/negri.jpg',
+          pic: '/aquienvoto/negri.jpg',
           twitter: 'https://twitter.com/marioraulnegri',
           news: []
         },
@@ -120,7 +120,7 @@ export default {
           id: 12,
           name: 'Agustín+Spaccesi',
           partido: 'Partido Unión Ciudadana',
-          pic: 'aquienvoto/spaccesi.jpg',
+          pic: '/aquienvoto/spaccesi.jpg',
           twitter: 'https://twitter.com/SpaccesiAgustin',
           news: []
         },
@@ -128,7 +128,7 @@ export default {
           id: 13,
           name: 'Luciana+Echevarría',
           partido: 'MST-Nueva Izquierda',
-          pic: 'aquienvoto/echevarria.jpg',
+          pic: '/aquienvoto/echevarria.jpg',
           twitter: 'https://twitter.com/LuciEchevarria',
           news: []
         }
