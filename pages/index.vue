@@ -6,12 +6,12 @@
         <div class="candidate-logo" :style="getCandidatePic(candidate.pic)"></div>
         <div class="name-twitter-container">
           <h1 class="name">{{ candidate.name.replace("+", " ") }}</h1>
-          <a :href="candidate.twitter" class="tw-logo"></a>
+          <a :href="candidate.twitter" target="_blank" class="tw-logo"></a>
         </div>
         <div class="news" v-for="article in candidate.news" v-bind:key="article.title">
           <h3 class="news-title"> {{ article.title }} </h3>
           <p class="description"> {{ parseContent(article.content) }} </p>
-          <a :href="article.url" class="news-link"> Ver en el diario </a>
+          <a :href="article.url"  target="_blank" class="news-link"> Ver en el diario </a>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@ export default {
           id: 1,
           name: 'Mario+Negri',
           partido: 'Cordoba cambia',
-          pic: '_nuxt/assets/negri.jpg',
+          pic: '/negri.jpg',
           twitter: 'https://twitter.com/marioraulnegri',
           news: [],
         },
@@ -40,7 +40,7 @@ export default {
           id: 2,
           name: 'Juan+Schiaretti',
           partido: 'Hacemos por Cordoba',
-          pic: '_nuxt/assets/schiaretti.png',
+          pic: '/schiaretti.png',
           twitter: 'https://twitter.com/JSchiaretti',
           news: [],
         },
@@ -48,7 +48,7 @@ export default {
           id: 3,
           name: 'Fernando+Schülle',
           partido: 'Partido humanista',
-          pic: '_nuxt/assets/schulle.jpg',
+          pic: '/schulle.jpg',
           twitter: 'https://twitter.com/ferschule',
           news: [],
         },
@@ -56,7 +56,7 @@ export default {
           id: 4,
           name: 'Aurelio+Elorrio',
           partido: 'Encuentro Vecinal Cordoba',
-          pic: '_nuxt/assets/elorrio.jpg',
+          pic: '/elorrio.jpg',
           twitter: 'https://twitter.com/AGarciaElorrio',
           news: []
         },
@@ -64,7 +64,7 @@ export default {
           id: 5,
           name: 'Carlos+Bianco',
           partido: 'Union del centro democratico',
-          pic: '_nuxt/assets/negri.jpg',
+          pic: '/negri.jpg',
           twitter: 'https://twitter.com/marioraulnegri',
           news: []
         },
@@ -72,7 +72,7 @@ export default {
           id: 6,
           name: 'Enrique+Sella',
           partido: 'P.A.I.S',
-          pic: '_nuxt/assets/sella.jpg',
+          pic: '/sella.jpg',
           twitter: 'https://twitter.com/SellaEnrique',
           news: []
         },
@@ -80,7 +80,7 @@ export default {
           id: 7,
           name: 'Ramón+Mestre',
           partido: 'Union civica radical',
-          pic: '_nuxt/assets/mestre.jpg',
+          pic: '/mestre.jpg',
           twitter: 'https://twitter.com/ramonjmestre',
           news: []
         },
@@ -88,7 +88,7 @@ export default {
           id: 8,
           name: 'Liliana+Olivero',
           partido: 'Frente de izquierda y de los trabajadores',
-          pic: '_nuxt/assets/olivero.jpg',
+          pic: '/olivero.jpg',
           twitter: 'https://twitter.com/LilianaOlivero',
           news: []
         },
@@ -96,7 +96,7 @@ export default {
           id: 9,
           name: 'Eduardo+Mulhall',
           partido: 'Movimiento avanzada socialista',
-          pic: '_nuxt/assets/mulhall.jpg',
+          pic: '/mulhall.jpg',
           twitter: 'https://twitter.com/EduardoMulhall',
           news: []
         },
@@ -104,7 +104,7 @@ export default {
           id: 10,
           name: 'Kasem+Dandach',
           partido: 'Movimiento de accion vecinal',
-          pic: '_nuxt/assets/dandach.png',
+          pic: '/dandach.png',
           twitter: 'https://twitter.com/KasemDandach57',
           news: []
         },
@@ -112,7 +112,7 @@ export default {
           id: 11,
           name: 'Luis+Beltrán',
           partido: 'Vecinalismo Independiente',
-          pic: '_nuxt/assets/negri.jpg',
+          pic: '/negri.jpg',
           twitter: 'https://twitter.com/marioraulnegri',
           news: []
         },
@@ -120,7 +120,7 @@ export default {
           id: 12,
           name: 'Agustín+Spaccesi',
           partido: 'Partido Unión Ciudadana',
-          pic: '_nuxt/assets/spaccesi.jpg',
+          pic: '/spaccesi.jpg',
           twitter: 'https://twitter.com/SpaccesiAgustin',
           news: []
         },
@@ -128,7 +128,7 @@ export default {
           id: 13,
           name: 'Luciana+Echevarría',
           partido: 'MST-Nueva Izquierda',
-          pic: '_nuxt/assets/echevarria.jpg',
+          pic: '/echevarria.jpg',
           twitter: 'https://twitter.com/LuciEchevarria',
           news: []
         }
@@ -140,7 +140,7 @@ export default {
       return content.substring(0, content.indexOf("["))
     },
     getCandidatePic: (img) => {
-      return "background-image: url(" + img + ")";
+      return "background-image: url('" + img + "')";
     }
   },
   mounted() {
@@ -210,15 +210,19 @@ body {
   align-self: flex-start;
 }
 
-.name::after {
+.tw-logo {
+  position: relative;
+}
+
+.tw-logo::after {
   content: '';
   display: block;
   background-image: url('../assets/tw-logo.jpg');
   background-size: cover;
   background-position: center;
   width: 25px;
-  top: 0;
-  left: 100%;
+  top: 10px;
+  left: -10px;
   height: 25px;
   border-radius: 50%;
   position: absolute;
@@ -273,5 +277,6 @@ footer a {
 
 .name-twitter-container {
   align-self: center;
+  display: flex;
 }
 </style>
